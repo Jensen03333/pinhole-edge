@@ -1,0 +1,278 @@
+{
+  "model_sha256": "e47b57438b473fb8753c7c4adcf12dec4415ecf196cd1fbb80735e2b4d49197b",
+  "virtual_deadlines": true,
+  "parts": [
+    {
+      "part": "A",
+      "state": "ACKED",
+      "decision": "NG_PINHOLE",
+      "trigger_ms": 0,
+      "due": 83,
+      "reason": "inference",
+      "result_ms": 23,
+      "image": "image_994",
+      "boxes": [
+        [
+          268.01647186279297,
+          89.74132537841797,
+          288.23123931884766,
+          111.3278579711914,
+          0.9624652862548828
+        ],
+        [
+          2.9625773429870605,
+          60.811614990234375,
+          19.22933340072632,
+          79.13156509399414,
+          0.8176425695419312
+        ]
+      ],
+      "inference_ms": 36.194
+    },
+    {
+      "part": "B",
+      "state": "ACKED",
+      "decision": "NO_PINHOLE",
+      "trigger_ms": 2,
+      "due": 70,
+      "reason": "inference",
+      "result_ms": 10,
+      "image": "image_21",
+      "boxes": [],
+      "inference_ms": 54.736
+    },
+    {
+      "part": "C",
+      "state": "ACKED",
+      "decision": "REVIEW",
+      "trigger_ms": 50,
+      "due": 210,
+      "reason": "frame_timeout",
+      "result_ms": 150
+    },
+    {
+      "part": "D",
+      "state": "HOLD_ACK_TIMEOUT",
+      "decision": "NG_PINHOLE",
+      "trigger_ms": 55,
+      "due": 126,
+      "reason": "inference",
+      "result_ms": 66,
+      "image": "image_19",
+      "boxes": [
+        [
+          118.13517570495605,
+          2.118091583251953,
+          143.30361366271973,
+          37.62239456176758,
+          0.5233504176139832
+        ]
+      ],
+      "inference_ms": 37.722
+    },
+    {
+      "part": "E",
+      "state": "ACKED",
+      "decision": "REVIEW",
+      "trigger_ms": 200,
+      "due": 265,
+      "reason": "image_error",
+      "result_ms": 205,
+      "message": "FileNotFoundError"
+    },
+    {
+      "part": "F",
+      "state": "ACKED",
+      "decision": "NG_PINHOLE",
+      "trigger_ms": 245,
+      "due": 310,
+      "reason": "inference",
+      "result_ms": 250,
+      "image": "image_215",
+      "boxes": [
+        [
+          300.4207992553711,
+          16.655292510986328,
+          317.1187973022461,
+          33.87430191040039,
+          0.41486865282058716
+        ]
+      ],
+      "inference_ms": 37.077
+    }
+  ],
+  "events": [
+    {
+      "t": 0,
+      "part": "A",
+      "event": "trigger"
+    },
+    {
+      "t": 2,
+      "part": "B",
+      "event": "trigger"
+    },
+    {
+      "t": 4,
+      "part": "A",
+      "event": "duplicate_trigger"
+    },
+    {
+      "t": 10,
+      "part": "B",
+      "event": "result",
+      "decision": "NO_PINHOLE",
+      "reason": "inference",
+      "image": "image_21",
+      "boxes": [],
+      "inference_ms": 54.736
+    },
+    {
+      "t": 15,
+      "part": "A",
+      "event": "frame_tag_mismatch",
+      "received": "B"
+    },
+    {
+      "t": 23,
+      "part": "A",
+      "event": "result",
+      "decision": "NG_PINHOLE",
+      "reason": "inference",
+      "image": "image_994",
+      "boxes": [
+        [
+          268.01647186279297,
+          89.74132537841797,
+          288.23123931884766,
+          111.3278579711914,
+          0.9624652862548828
+        ],
+        [
+          2.9625773429870605,
+          60.811614990234375,
+          19.22933340072632,
+          79.13156509399414,
+          0.8176425695419312
+        ]
+      ],
+      "inference_ms": 36.194
+    },
+    {
+      "t": 27,
+      "part": "B",
+      "event": "ack"
+    },
+    {
+      "t": 29,
+      "part": "A",
+      "event": "ack"
+    },
+    {
+      "t": 50,
+      "part": "C",
+      "event": "trigger"
+    },
+    {
+      "t": 55,
+      "part": "D",
+      "event": "trigger"
+    },
+    {
+      "t": 66,
+      "part": "D",
+      "event": "result",
+      "decision": "NG_PINHOLE",
+      "reason": "inference",
+      "image": "image_19",
+      "boxes": [
+        [
+          118.13517570495605,
+          2.118091583251953,
+          143.30361366271973,
+          37.62239456176758,
+          0.5233504176139832
+        ]
+      ],
+      "inference_ms": 37.722
+    },
+    {
+      "t": 69,
+      "part": "D",
+      "event": "stale_or_unknown_frame"
+    },
+    {
+      "t": 126,
+      "part": "D",
+      "event": "ack_timeout"
+    },
+    {
+      "t": 130,
+      "part": "D",
+      "event": "unexpected_ack"
+    },
+    {
+      "t": 150,
+      "part": "C",
+      "event": "result",
+      "decision": "REVIEW",
+      "reason": "frame_timeout"
+    },
+    {
+      "t": 154,
+      "part": "C",
+      "event": "stale_or_unknown_frame"
+    },
+    {
+      "t": 156,
+      "part": "C",
+      "event": "ack"
+    },
+    {
+      "t": 200,
+      "part": "E",
+      "event": "trigger"
+    },
+    {
+      "t": 205,
+      "part": "E",
+      "event": "result",
+      "decision": "REVIEW",
+      "reason": "image_error",
+      "message": "FileNotFoundError"
+    },
+    {
+      "t": 208,
+      "part": "E",
+      "event": "ack"
+    },
+    {
+      "t": 245,
+      "part": "F",
+      "event": "trigger"
+    },
+    {
+      "t": 250,
+      "part": "F",
+      "event": "result",
+      "decision": "NG_PINHOLE",
+      "reason": "inference",
+      "image": "image_215",
+      "boxes": [
+        [
+          300.4207992553711,
+          16.655292510986328,
+          317.1187973022461,
+          33.87430191040039,
+          0.41486865282058716
+        ]
+      ],
+      "inference_ms": 37.077
+    },
+    {
+      "t": 260,
+      "part": "F",
+      "event": "ack"
+    }
+  ]
+}

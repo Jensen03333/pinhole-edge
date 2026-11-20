@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.20)
+project(pinhole_inspect LANGUAGES CXX)
+set(ORT_SDK "${CMAKE_CURRENT_SOURCE_DIR}/../build/ort-sdk" CACHE PATH "ONNX Runtime CPU SDK")
+add_executable(pinhole-inspect main.cpp)
+target_compile_features(pinhole-inspect PRIVATE cxx_std_17)
+target_compile_options(pinhole-inspect PRIVATE /W4 /utf-8)
+target_include_directories(pinhole-inspect PRIVATE "${ORT_SDK}/include")
+target_link_libraries(pinhole-inspect PRIVATE "${ORT_SDK}/bin/onnxruntime.lib" windowscodecs ole32)
+target_link_options(pinhole-inspect PRIVATE "/PDBALTPATH:pinhole-inspect.pdb")
+set_property(TARGET pinhole-inspect PROPERTY MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
+add_custom_command(TARGET pinhole-inspect POST_BUILD COMMAND ${CMAKE_COMMAND} -E copy_if_different
+                   "${ORT_SDK}/bin/onnxruntime.dll" "$<TARGET_FILE_DIR:pinhole-inspect>")

@@ -1,0 +1,56 @@
+{
+  "source_doi": "10.6084/m9.figshare.29260121.v1",
+  "md5": "7cbbf14725f9762a64a81a12b858a2b4",
+  "raw_images": 2227,
+  "text_files": 581,
+  "classification_box_check": {
+    "CSV0_boxes0": 1708,
+    "CSV1_boxes1": 519
+  },
+  "exclusions": {
+    "unclassified_defect": 78
+  },
+  "split_counts": {
+    "test": {
+      "images": 423,
+      "pinhole_images": 55,
+      "confirmed_no_pinhole": 368,
+      "pinholes": 60
+    },
+    "train": {
+      "images": 1431,
+      "pinhole_images": 362,
+      "confirmed_no_pinhole": 1069,
+      "pinholes": 393
+    },
+    "fit_used": {
+      "images": 905,
+      "pinhole_images": 362,
+      "confirmed_no_pinhole": 543,
+      "pinholes": 393
+    },
+    "val": {
+      "images": 295,
+      "pinhole_images": 86,
+      "confirmed_no_pinhole": 209,
+      "pinholes": 92
+    }
+  },
+  "sequences": {
+    "test": [
+      "R1-900um-top-to-bottom-center",
+      "R7-700um-middle"
+    ],
+    "train": [
+      "R1-1000um-top-to-bottom-center",
+      "R1-1100um-top-to-bottom-center",
+      "R1-1100um-top-to-bottom-center-1",
+      "R1-600um-top-to-bottom-center",
+      "R1-700um-top-to-bottom-center"
+    ],
+    "val": [
+      "R1-800um-top-to-bottom-center"
+    ]
+  },
+  "train_negative_sampling_seed": 41
+}

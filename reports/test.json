@@ -1,0 +1,110 @@
+{
+  "all": {
+    "opencv": {
+      "images": 423,
+      "gt": 60,
+      "tp": 44,
+      "fp": 84,
+      "fn": 16,
+      "precision": 0.34375,
+      "recall": 0.7333333333333333,
+      "f1": 0.46808510638297873,
+      "false_boxes_per_image": 0.19858156028368795,
+      "small_gt": 25,
+      "small_tp": 21,
+      "small_recall": 0.84,
+      "no_pinhole_images": 368,
+      "no_pinhole_flagged": 33,
+      "ap50_101": 0.4488845173379901
+    },
+    "yolo": {
+      "images": 423,
+      "gt": 60,
+      "tp": 40,
+      "fp": 3,
+      "fn": 20,
+      "precision": 0.9302325581395349,
+      "recall": 0.6666666666666666,
+      "f1": 0.7766990291262136,
+      "false_boxes_per_image": 0.0070921985815602835,
+      "small_gt": 25,
+      "small_tp": 13,
+      "small_recall": 0.52,
+      "no_pinhole_images": 368,
+      "no_pinhole_flagged": 3,
+      "ap50_101": 0.9212536718127252
+    }
+  },
+  "R1-900um-top-to-bottom-center": {
+    "opencv": {
+      "images": 291,
+      "gt": 39,
+      "tp": 29,
+      "fp": 6,
+      "fn": 10,
+      "precision": 0.8285714285714286,
+      "recall": 0.7435897435897436,
+      "f1": 0.7837837837837838,
+      "false_boxes_per_image": 0.020618556701030927,
+      "small_gt": 21,
+      "small_tp": 18,
+      "small_recall": 0.8571428571428571,
+      "no_pinhole_images": 257,
+      "no_pinhole_flagged": 6,
+      "ap50_101": 0.7835541725195557
+    },
+    "yolo": {
+      "images": 291,
+      "gt": 39,
+      "tp": 23,
+      "fp": 3,
+      "fn": 16,
+      "precision": 0.8846153846153846,
+      "recall": 0.5897435897435898,
+      "f1": 0.7076923076923077,
+      "false_boxes_per_image": 0.010309278350515464,
+      "small_gt": 21,
+      "small_tp": 11,
+      "small_recall": 0.5238095238095238,
+      "no_pinhole_images": 257,
+      "no_pinhole_flagged": 3,
+      "ap50_101": 0.889173647615799
+    }
+  },
+  "R7-700um-middle": {
+    "opencv": {
+      "images": 132,
+      "gt": 21,
+      "tp": 15,
+      "fp": 78,
+      "fn": 6,
+      "precision": 0.16129032258064516,
+      "recall": 0.7142857142857143,
+      "f1": 0.2631578947368421,
+      "false_boxes_per_image": 0.5909090909090909,
+      "small_gt": 4,
+      "small_tp": 3,
+      "small_recall": 0.75,
+      "no_pinhole_images": 111,
+      "no_pinhole_flagged": 27,
+      "ap50_101": 0.4809686128876759
+    },
+    "yolo": {
+      "images": 132,
+      "gt": 21,
+      "tp": 17,
+      "fp": 0,
+      "fn": 4,
+      "precision": 1.0,
+      "recall": 0.8095238095238095,
+      "f1": 0.8947368421052632,
+      "false_boxes_per_image": 0.0,
+      "small_gt": 4,
+      "small_tp": 2,
+      "small_recall": 0.5,
+      "no_pinhole_images": 111,
+      "no_pinhole_flagged": 0,
+      "ap50_101": 0.9687791078759446
+    }
+  }
+}

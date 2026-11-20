@@ -1,0 +1,48 @@
+{
+  "input": "decoded BGR 640x480 in RAM",
+  "hardware": "local CPU",
+  "opencv_threads": 1,
+  "onnx_threads": 2,
+  "excludes": [
+    "file I/O",
+    "camera",
+    "PLC",
+    "render"
+  ],
+  "methods": {
+    "opencv": {
+      "unique_frames": 64,
+      "repeats": 3,
+      "warmup": 8,
+      "p50_ms": 7.15975,
+      "p95_ms": 7.990645,
+      "round_p50_ms": [
+        7.192399999999999,
+        7.13345,
+        7.1509
+      ],
+      "round_p95_ms": [
+        8.01606,
+        8.03213,
+        7.720319999999999
+      ]
+    },
+    "yolo": {
+      "unique_frames": 64,
+      "repeats": 3,
+      "warmup": 8,
+      "p50_ms": 31.98405,
+      "p95_ms": 33.37337,
+      "round_p50_ms": [
+        31.886650000000003,
+        31.9591,
+        32.2178
+      ],
+      "round_p95_ms": [
+        33.404810000000005,
+        33.24749,
+        33.472025
+      ]
+    }
+  }
+}

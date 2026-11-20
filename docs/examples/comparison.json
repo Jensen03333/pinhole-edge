@@ -1,0 +1,30 @@
+[
+  {
+    "id": "image_266",
+    "sequence": "R1-900um-top-to-bottom-center",
+    "crop": [
+      202,
+      214,
+      352,
+      314
+    ],
+    "condition": "OpenCV located the pinhole, YOLO returned no box",
+    "published": 1,
+    "opencv": 1,
+    "yolo": 0
+  },
+  {
+    "id": "image_69",
+    "sequence": "R7-700um-middle",
+    "crop": [
+      277,
+      66,
+      427,
+      166
+    ],
+    "condition": "OpenCV flagged a region on an image with no labeled pinhole",
+    "published": 0,
+    "opencv": 3,
+    "yolo": 0
+  }
+]

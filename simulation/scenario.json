@@ -1,0 +1,28 @@
+{
+  "frame_timeout_ms": 100,
+  "ack_timeout_ms": 60,
+  "stop_ms": 500,
+  "events": [
+    {"t": 0,   "type": "trigger", "part": "A"},
+    {"t": 2,   "type": "trigger", "part": "B"},
+    {"t": 4,   "type": "trigger", "part": "A"},
+    {"t": 10,  "type": "frame", "part": "B", "tag": "B", "image": "image_21"},
+    {"t": 15,  "type": "frame", "part": "A", "tag": "B", "image": "image_21"},
+    {"t": 23,  "type": "frame", "part": "A", "tag": "A", "image": "image_994"},
+    {"t": 27,  "type": "ack", "part": "B"},
+    {"t": 29,  "type": "ack", "part": "A"},
+    {"t": 50,  "type": "trigger", "part": "C"},
+    {"t": 55,  "type": "trigger", "part": "D"},
+    {"t": 66,  "type": "frame", "part": "D", "tag": "D", "image": "image_19"},
+    {"t": 69,  "type": "frame", "part": "D", "tag": "D", "image": "image_19"},
+    {"t": 130, "type": "ack", "part": "D"},
+    {"t": 154, "type": "frame", "part": "C", "tag": "C", "image": "image_215"},
+    {"t": 156, "type": "ack", "part": "C"},
+    {"t": 200, "type": "trigger", "part": "E"},
+    {"t": 205, "type": "frame", "part": "E", "tag": "E", "image": "image_99999999"},
+    {"t": 208, "type": "ack", "part": "E"},
+    {"t": 245, "type": "trigger", "part": "F"},
+    {"t": 250, "type": "frame", "part": "F", "tag": "F", "image": "image_215"},
+    {"t": 260, "type": "ack", "part": "F"}
+  ]
+}
